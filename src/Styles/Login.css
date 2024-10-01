@@ -1,0 +1,68 @@
+.LoginScreenWrapper {
+  background-color: var(--white);
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+.LoginScreenWrapper h1 {
+  text-align: center;
+
+}
+.LoginScreenInputLabelWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.LoginScreenInputLabelWrapper div{
+  display: flex;
+  flex-direction: column;
+}
+
+.LoginScreenInputLabelWrapper div label {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.LoginScreenInputLabelWrapper div input {
+  width: 300px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding-inline: 10px;
+  margin-bottom: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  /* outline-style: none; */
+  outline-offset: 1px;
+  outline-color: var(--periwinkle);
+}
+.LoginScreenWrapper button {
+  width: 320px;
+  height: 30px;
+  padding-inline: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  background-color: var(--periwinkle);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+}
+.LoginScreenWrapper button:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+  background-color: rgb(88, 129, 206);
+}
+
+
+
+.donotHaveaccountwarpper{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.donotHaveaccountwarpper p{
+    margin-right: 5px;
+}

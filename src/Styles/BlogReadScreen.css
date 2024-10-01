@@ -1,0 +1,27 @@
+.BlogPostContainer {
+  width: 50vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.BlogPostContainer img{
+    width: 50vw;
+    height: auto;
+}
+.BlogPostContainer figure{
+    margin-left: 0;  
+    /* width: 60vw; */
+}
+@media screen and (max-width: 1000px) {
+  .BlogPostContainer {
+    width: 90vw;
+    margin: auto;
+    
+  }
+  .BlogPostContainer img{
+    width: 90vw;
+    height: auto;
+}
+}

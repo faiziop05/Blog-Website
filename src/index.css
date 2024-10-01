@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Define theme colors using CSS variables */
+:root {
+  --lavender: #9a9cea; /* Header, Footer, Navbar */
+  --periwinkle: #a2b9ee; /* Primary buttons, Borders */
+  --skyBlue: #a2dcee; /* Links */
+  --mintGreen: #adeee2; /* Highlight sections, Cards, Banners */
+  --white: #ffffff; /* General background */
+}

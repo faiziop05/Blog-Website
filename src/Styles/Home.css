@@ -1,0 +1,57 @@
+.HomeScreenContainer {
+  width: 60vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.HomeCardsContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.HomeCardButton {
+  border: 1px solid rgba(79, 149, 230, 0.144);
+  padding: 0;
+  margin: 5px;
+  background-color: rgba(243, 243, 243, 0.685);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.HomeCardButton:hover {
+  transition: 0.2s ease-in-out;
+  translate: 0 -5px;
+  background-color: #a2b9ee5d;
+}
+
+@media screen and (max-width: 1000px) {
+  .HomeScreenContainer {
+    width: 98vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0;
+  }
+  .HomeCardsContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .HomeCardButton {
+    padding: 0;
+    margin: 5px;
+  }
+}
+.LoadMoreTrigger{
+  margin-top: 100px;
+}

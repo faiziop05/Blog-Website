@@ -1,0 +1,91 @@
+.navBarConatiner{
+    background-color: var(--lavender);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: j; */
+    padding-bottom: 20px;
+    padding-inline: 20px;
+}
+.NavBarWrapper {
+    background-color: var(--lavender);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+  }
+  
+  .NavBarWrapper h1 {
+    color: aliceblue;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  /* Hide the links on smaller screens */
+  .navLinksWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navBarLinks {
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 20px;
+    color: var(--white);
+    border-radius: 10px;
+  }
+  
+  .navBarLinks:hover {
+    color: var(--lavender);
+    transition: 0.2s ease-in-out;
+    background-color: var(--white);
+  }
+  .menuButton {
+    display: none;
+  }
+  /* Styles for smaller screens */
+  @media screen and (max-width: 800px) {
+    .navBarConatiner{
+        padding-bottom: 0px;
+        padding-inline: 20px;
+        
+    }
+    .NavBarWrapper {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .menuButton {
+      display: block;
+      background-color: var(--lavender);
+      color: var(--white);
+      font-size: 24px;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+  
+    /* Hide nav links by default */
+    .navLinksWrapper {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: var(--lavender);
+    }
+  
+    /* Show the menu when open */
+    .navLinksWrapper.open {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .navBarLinks {
+      width: 100%;
+      margin: 10px 0;
+      padding: 15px 20px;
+      text-align: left;
+    }
+  }
+  

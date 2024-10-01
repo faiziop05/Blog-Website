@@ -1,0 +1,25 @@
+.HomeCardWrapper {
+    width: 150px;
+    padding: 0;
+
+}
+.HomeCardWrapper img {
+  width: 150px;
+  height: 150px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.HomeCardWrapper h1 {
+  padding: 0 10px;
+  font-size: 16px;
+  width: 120px;
+  text-wrap: wrap;
+  overflow: hidden;
+  text-align: left;
+}
+.HomeCardWrapper p {
+  padding: 0 10px;
+  font-size: 12px;
+  width: 120px;
+  text-align: left;
+}
