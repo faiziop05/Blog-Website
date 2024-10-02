@@ -1,14 +1,43 @@
 .navBarConatiner{
-    background-color: var(--lavender);
+    /* background-color: var(--lavender); */
+    background-color: rgba(112, 112, 112, 0.226);
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     /* justify-content: j; */
     padding-bottom: 20px;
     padding-inline: 20px;
+    box-shadow: 0px 0px 50px 1px rgba(255, 166, 0, 0.315);
+    
+}
+
+.navBarSettingsMenuWrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.settingsIcon{
+  font-size: 24px;
+  margin-right: 10px;
+  display: block;
+  color: var(--white);
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+.settingsIcon:hover{
+  font-size: 24px;
+  margin-right: 10px;
+  display: block;
+  color: rgb(153, 153, 153);
+  transition: 0.2s ease-in;
+
 }
 .NavBarWrapper {
-    background-color: var(--lavender);
+    /* background-color: rgba(255, 249, 249, 0.075); */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,7 +46,7 @@
   }
   
   .NavBarWrapper h1 {
-    color: aliceblue;
+    color: orange;
     font-family: "Courier New", Courier, monospace;
   }
   
@@ -33,7 +62,7 @@
     padding: 10px;
     text-decoration: none;
     margin: 0 20px;
-    color: var(--white);
+    color: orange;
     border-radius: 10px;
   }
   
@@ -49,8 +78,8 @@
   @media screen and (max-width: 800px) {
     .navBarConatiner{
         padding-bottom: 0px;
-        padding-inline: 20px;
-        
+        padding-inline: 10px;
+        margin-right: 0;
     }
     .NavBarWrapper {
       flex-direction: row;
@@ -59,12 +88,13 @@
   
     .menuButton {
       display: block;
-      background-color: var(--lavender);
+      background-color: rgba(112, 112, 112, 0.226);
       color: var(--white);
       font-size: 24px;
       border: none;
       cursor: pointer;
       padding: 10px;
+      border-radius: 10px;
     }
   
     /* Hide nav links by default */
@@ -72,7 +102,7 @@
       display: none;
       flex-direction: column;
       width: 100%;
-      background-color: var(--lavender);
+
     }
   
     /* Show the menu when open */

@@ -6,16 +6,16 @@ import NAvBar from "../../components/NAvBar";
 const BlogReadScreen = () => {
   const location = useLocation();
   const [blog, setBlog] = useState(null);
-
+const id=location.state.id || location.state._id
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        if (!location.state.id) {
+        if (!id) {
           console.log("No blog id");
           return;
         }
         const res = await axios.get(
-          `http://localhost:5000/api/user/getBlogById${location.state.id}`
+          `http://localhost:5000/api/user/getBlogById${id}`
         );
         if (res.status === 200) {
           setBlog(res.data); // Set user data
@@ -25,16 +25,17 @@ const BlogReadScreen = () => {
       }
     };
     fetchUser();
-  }, [location.state.id]); // Dependency array is empty, so this effect only runs once
+  }, [id]); // Dependency array is empty, so this effect only runs once
 
-  console.log(blog?.data);
   return (
     <div>
       <NAvBar disableScreen={true} />
+      <h1 className="BlogPostTitle" >{blog?.data?.title}</h1>
       <div
         className="BlogPostContainer"
         dangerouslySetInnerHTML={{ __html: blog?.data?.content }}
       />
+
     </div>
   );
 };

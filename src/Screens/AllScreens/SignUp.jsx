@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../Styles/Login.css";
 import NAvBar from "../../components/NAvBar";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 const SignUp = () => {
   const [name, setName] = useState("");
@@ -98,6 +98,10 @@ const SignUp = () => {
           <button onClick={handleSubmit} type="submit">
             Login
           </button>
+        </div>
+        <div className="donotHaveaccountwarpper">
+          <p>Already have an account!</p>
+          <Link className="loginpageslinks" to={"/Login"}>Sign In</Link>
         </div>
       </div>
     </>

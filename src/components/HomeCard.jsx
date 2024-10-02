@@ -1,6 +1,7 @@
 import React, { memo } from "react";
 import "../Styles/HomeCard.css";
-const HomeCard = ({ data }) => {
+
+const HomeCard = ({ data}) => {
   return (
     <div className="HomeCardWrapper">
       <img src={data.coverImage} alt="Cover Image" />

@@ -1,5 +1,5 @@
 .BlogCoverupload-button {
-  background-color: #a2b9ee;
+  background-color: #346beb;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -14,6 +14,7 @@
 .BlogCoverupload-button:hover {
   background-color: #0056b3; /* Darker shade on hover */
   transition: 0.2s ease-in-out;
+  translate: 0 -2px;
 }
 .BlogCoverfile-input {
   display: none;
@@ -21,7 +22,7 @@
 .BlogCoverpreview-container {
   margin-top: 20px;
 }
-.BlogCoverpreview-container p{
+.BlogCoverpreview-container p {
   margin-left: 20vw;
 }
 .BlogCoverimage-preview {
@@ -42,12 +43,58 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  background-color: rgba(243, 243, 243, 0.13);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 .AddBlogtitle {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.rdw-editor-toolbar {
+  border-radius: 10px;
+  border: 1px solid rgba(124, 124, 124, 0.534);
+  background-color: #000000; /* Change this to your desired color */
+}
+.rdw-dropdown-optionwrapper {
+  background-color: rgba(51, 51, 51, 0.959);
+  border: 0;
+  border-radius: 10px;
+}
+.rdw-dropdown-selectedtext {
+  background-color: rgba(51, 51, 51, 0.959);
+  border: 0;
+  color: #f9f9f9;
+  border-radius: 10px;
+}
+.rdw-dropdown-wrapper,
+.rdw-block-dropdown {
+  background-color: rgba(51, 51, 51, 0.959);
+  border: 0;
+  border-radius: 10px;
+}
+/* Individual button background color */
+.rdw-option-wrapper {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 6px;
+  margin: 2px;
+  border: 0;
+  color: #f9f9f9;
+}
+
+.rdw-dropdownoption-default {
+  background-color: rgba(51, 51, 51, 0.959);
+  color: #f1f1f1;
+}
+
+/* Change button hover effect */
+.rdw-option-wrapper:hover {
+  background-color: #888888; /* Change this to your desired hover color */
 }
 
 /* Style for the select box */
@@ -68,8 +115,14 @@
   flex-direction: column;
   margin-left: 20vw;
 }
-
-
+.rdw-image-modal,
+.rdw-embedded-modal,
+.rdw-link-modal,
+.rdw-colorpicker-modal,.rdw-colorpicker-modal .rdw-option-wrapper,.rdw-colorpicker-modal .rdw-colorpicker-option {
+  background-color: rgba(51, 51, 51, 0.959);
+  border: 0;
+  border-radius: 10px;
+}
 
 .AddBlogScreenTitleBlog {
   width: 300px;
@@ -84,18 +137,11 @@
   outline-color: var(--periwinkle);
 }
 .AddBlogcontainer .editor-container {
-  border: 1px solid var(--periwinkle);
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 10px;
   min-height: 60vh;
   width: 60vw;
-}
-
-.AddBlogcontainer .preview {
-  border: 1px solid var(--periwinkle);
-  padding: 10px;
-  background-color: #f9f9f9; /* Light gray background for preview */
 }
 
 .AddBlogcontainer .buttons {
@@ -108,18 +154,21 @@
 .AddBlogcontainer .preview-button {
   padding: 10px 20px;
   border: none;
-  background-color: var(--periwinkle);
+  background-color: #346beb;
   border-radius: 6px;
   color: white;
   cursor: pointer;
   margin-inline: 10px;
   font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .AddBlogcontainer .submit-button:hover,
 .AddBlogcontainer .preview-button:hover {
   background-color: #0056b3; /* Darker shade on hover */
   transition: 0.2s ease-in-out;
+  translate: 0 -2px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -132,14 +181,19 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    background-color: rgba(243, 243, 243, 0.13);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 100px;
   }
   .BlogCoverupload-button {
     margin-left: 5vw;
   }
+
   .BlogCoverimage-preview {
     margin-left: 5vw;
   }
-  .BlogCoverpreview-container p{
+  .BlogCoverpreview-container p {
     margin-left: 5vw;
   }
   .AddBlogcontainer .editor-container {

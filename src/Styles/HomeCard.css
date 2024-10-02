@@ -1,25 +1,105 @@
 .HomeCardWrapper {
-    width: 150px;
-    padding: 0;
-
+  width: 200px;
+  padding: 0;
+  /* justify-content: space-between; */
 }
 .HomeCardWrapper img {
-  width: 150px;
+  width: 200px;
   height: 150px;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
+  margin-top: 0;
 }
 .HomeCardWrapper h1 {
   padding: 0 10px;
-  font-size: 16px;
-  width: 120px;
+  font-size: 14px;
+  width: 180px;
+  height: 34px;
   text-wrap: wrap;
   overflow: hidden;
   text-align: left;
+  color: rgba(255, 255, 255, 0.897);
 }
 .HomeCardWrapper p {
   padding: 0 10px;
   font-size: 12px;
-  width: 120px;
+  width: 180px;
   text-align: left;
+  color: orange;
+}
+.HomeCardWrapper div{
+  display: flex;
+align-items: flex-end;
+padding: 10px;
+}
+.BlogEditButton{
+border: 0;
+background-color: rgba(127, 255, 212, 0);
+ color: aliceblue;
+ background-color: orange;
+padding: 10px;
+ width: 20px;
+ height: 20px;
+ align-items: center;
+ justify-content: center;
+ border-radius: 10px;
+ font-size: 20px;
+ margin-right: 10px;
+}
+.BlogDeleteButton{
+border: 0;
+background-color: rgba(127, 255, 133, 0);
+color: aliceblue;
+background-color: rgb(255, 0, 0);
+padding: 10px;
+ width: 20px;
+ height: 20px;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+font-size: 20px;
+}
+.BlogEditButton:hover{
+  width: 22px;
+  height: 22px;
+  transition: 0.1s ease-in;
+ background-color: rgb(204, 135, 7);
+}
+.BlogDeleteButton:hover{
+  width: 22px;
+  height: 22px;
+  transition: 0.1s ease-in;
+background-color: rgb(175, 7, 7);
+
+}
+@media screen and (max-width: 600px) {
+  .HomeCardWrapper {
+    width: 90vw;
+    padding: 0;
+    /* justify-content: space-between; */
+  }
+  .HomeCardWrapper img {
+    width: 90vw;
+    height: auto;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-top: 0;
+  }
+  .HomeCardWrapper h1 {
+    padding: 0 10px;
+    font-size: 14px;
+    width: 85vw;
+    height: 34px;
+    text-wrap: wrap;
+    overflow: hidden;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.897);
+  }
+  .HomeCardWrapper p {
+    padding: 0 10px;
+    font-size: 12px;
+    width: 85vw;
+    text-align: left;
+    color: orange;
+  }
 }

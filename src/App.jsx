@@ -1,6 +1,7 @@
 import "./App.css";
-import { AddBlog, Home, Login, SignUp ,BlogReadScreen} from "./Screens";
+import { AddBlog, Home,CategoryScreen, Login, SignUp ,BlogReadScreen, MyBlogs,Settings} from "./Screens";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
+
 function App() {
   return (
     <BrowserRouter>
@@ -10,6 +11,10 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
         <Route path="BlogReadScreen" element={<BlogReadScreen />} />
+        <Route path="CategoryScreen" element={<CategoryScreen />} />
+        <Route path="MyBlogs" element={<MyBlogs />} />
+        <Route path="Settings" element={<Settings />} />
+
       </Routes>
     </BrowserRouter>
   );

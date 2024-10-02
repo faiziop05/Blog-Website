@@ -15,22 +15,51 @@
   justify-content: center;
 }
 .HomeCardButton {
-  border: 1px solid rgba(79, 149, 230, 0.144);
+  border: 0;
   padding: 0;
-  margin: 5px;
-  background-color: rgba(243, 243, 243, 0.685);
-  border-radius: 8px;
+  background-color: rgba(243, 243, 243, 0);
   cursor: pointer;
 }
-.HomeCardButton:hover {
+
+.HomeCardContinerWithButtons{
+  border: 1px solid rgba(79, 149, 230, 0.144);
+  margin: 5px 20px;
+  background-color: rgba(243, 243, 243, 0.13);
+  border-radius: 8px;
+}
+.UpdateDeleteButtonWrapper{
+  padding: 5px;
+}
+
+.HomeCardContinerWithButtons:hover {
   transition: 0.2s ease-in-out;
   translate: 0 -5px;
   background-color: #a2b9ee5d;
 }
+.LoadMoreTriggerCatogory{
+  margin-top: 90vh;
+}
+
+.selected-tags-containercategoryscreen{
+  display: flex;
+  flex-direction: column;
+}
+.tags-select-categoryscreen{
+  margin: 20px 0;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+}
+
+
 
 @media screen and (max-width: 1000px) {
   .HomeScreenContainer {
     width: 98vw;
+    /* width: 100%; */
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -49,7 +78,7 @@
   }
   .HomeCardButton {
     padding: 0;
-    margin: 5px;
+    margin: 20px 5px;
   }
 }
 .LoadMoreTrigger{

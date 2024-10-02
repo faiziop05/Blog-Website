@@ -12,6 +12,28 @@ const Home = () => {
   const [hasMore, setHasMore] = useState(false);
   const navigate = useNavigate();
   const observerRef = useRef();
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const token = localStorage.getItem("token");
+        const res = await axios.get("http://localhost:5000/api/user/userinfo", {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        if (res.status === 200) {
+          console.log(res.data);
+          
+          localStorage.setItem("userId", res.data._id);
+        }
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoading(false); // Set loading to false after data fetch
+      }
+    };
+    fetchUser();
+  }, []);
+
   const fetchData = async () => {
     try {
       const res = await axios.get(
@@ -41,7 +63,7 @@ const Home = () => {
           setPage((prev) => prev + 1);
         }
       },
-      { threshold: 1}
+      { threshold: 0.5 }
     );
     if (observerRef.current) {
       observer.observe(observerRef.current);
@@ -75,9 +97,8 @@ const Home = () => {
             </button>
           ))}
         </div>
-          {loading && <Loading color={"#9a9cea"} type={"bubbles"}/>}
-        <div ref={observerRef} className="LoadMoreTrigger">
-        </div>
+        {loading && <Loading color={"#9a9cea"} type={"bubbles"} />}
+        <div ref={observerRef} className="LoadMoreTrigger"></div>
       </div>
     </div>
   );

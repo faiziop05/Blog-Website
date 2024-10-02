@@ -71,7 +71,7 @@ const Login = () => {
         </div>
         <div className="donotHaveaccountwarpper">
           <p>Don't have an account!</p>
-          <Link to={"/signup"}>Sign Up</Link>
+          <Link className="loginpageslinks" to={"/signup"}>Sign Up</Link>
         </div>
       </div>
     </>
