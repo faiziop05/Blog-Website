@@ -10,8 +10,8 @@ import { v2 as cloudinary } from 'cloudinary';
 (async function() {
     cloudinary.config({
       cloud_name: 'deo4larpc',
-      api_key: '282467973281694',
-      api_secret: 'yjlWYpnTh7a8V4a6pmwDkz5FSjU',
+      api_key: 'API_KEY',
+      api_secret: 'SECRET_KEY',
       secure: true,
     });
 })();
