@@ -86,11 +86,11 @@ const Home = () => {
       <NAvBar disableScreen={false} />
       <div className="HomeScreenContainer">
         <h2>All Blogs</h2>
-        <div className="HomeCardsContainer">
+        <div className="HomeCardsContaineractual">
           {data?.map((item) => (
             <button
               onClick={() => navigate("BlogReadScreen", { state: item })}
-              className="HomeCardButton"
+              className="HomeCardButton1"
               key={item.id}
             >
               <HomeCard data={item} />

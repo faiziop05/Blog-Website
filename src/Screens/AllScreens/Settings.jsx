@@ -3,8 +3,9 @@ import NAvBar from "../../components/NAvBar";
 import { useDispatch } from "react-redux";
 import { setIsLoggedIn } from "../../redux/LoginSlice";
 import { replace, useNavigate } from "react-router-dom";
+import "../../Styles/Settings.css";
 const Settings = () => {
-    const navigate=useNavigate()
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -16,7 +17,11 @@ const Settings = () => {
   return (
     <div>
       <NAvBar />
-      <button onClick={handleLogout}>Logout</button>
+      <div className="SettingsScreenWraper">
+        <button className="LogoutButton" onClick={handleLogout}>
+          Logout
+        </button>
+      </div>
     </div>
   );
 };

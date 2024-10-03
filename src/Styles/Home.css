@@ -13,12 +13,24 @@
   padding: 10px;
   flex-wrap: wrap;
   justify-content: center;
+  /* border: 1px solid rgba(79, 149, 230, 0.144); */
+  margin: 5px 20px;
+  /* background-color: rgba(243, 243, 243, 0.13); */
+  border-radius: 8px;
 }
+
 .HomeCardButton {
   border: 0;
   padding: 0;
   background-color: rgba(243, 243, 243, 0);
   cursor: pointer;
+}
+.HomeCardButton1 {
+  border: 1px solid rgba(79, 149, 230, 0.144);
+  margin: 5px 10px;
+  background-color: rgba(243, 243, 243, 0.13);
+  border-radius: 8px;
+  padding: 0;
 }
 
 .HomeCardContinerWithButtons{
@@ -80,6 +92,13 @@
     padding: 0;
     margin: 20px 5px;
   }
+  /* .HomeCardButton1 {
+    border: 1px solid rgba(79, 149, 230, 0.144);
+    margin: 5px 10px;
+    background-color: rgba(243, 243, 243, 0.13);
+    border-radius: 8px;
+    padding: 0;
+  } */
 }
 .LoadMoreTrigger{
   margin-top: 100px;
